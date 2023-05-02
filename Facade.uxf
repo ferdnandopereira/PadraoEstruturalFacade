@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>100</y>
+      <w>240</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Facade
+--
++nomeCliente: ClienteBanco
++numeroConta: ContaBancaria
+--
++fazerDeposito()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>100</y>
+      <w>190</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>AplicacaoCliente
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>110</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>310</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ClienteBanco
+--
+-nomeCliente
+--
++obterNomeCliente():</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>310</y>
+      <w>170</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ContaBancaria
+--
+-numeroConta
+-saldo
+--
++obterNumConta():
++obterSaldo():
++depositar():</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>180</y>
+      <w>180</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;160.0;70.0;160.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>230</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;80.0;10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+</diagram>
